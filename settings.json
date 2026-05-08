@@ -1,0 +1,196 @@
+{
+    "leetcode.workspaceFolder": "/Users/machine/.leetcode",
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "editor.fontSize": 16,
+    "debug.onTaskErrors": "showErrors",
+    "explorer.confirmDelete": false,
+    "terminal.integrated.enablePersistentSessions": false,
+
+
+    "EnglishChineseDictionary.enableHover": true,
+    "editor.fontWeight": "normal",
+    "files.autoSave": "afterDelay",
+    "editor.mouseWheelZoom": true,
+    "terminal.integrated.smoothScrolling": true,
+    "editor.formatOnPaste": true,//在粘贴时格式化代码
+    "editor.formatOnType": true,//敲完一行代码自动格式化
+    "editor.tabCompletion": "on",//启用Tab补全
+
+    "editor.wordWrap": "on",
+    // vim settings
+    "vim.useCtrlKeys": true,
+    "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-x>": false,
+    "<C-j>": false,
+    "<C-f>": false,
+    },
+    
+    "vim.useSystemClipboard": true,
+    "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+    ],
+    "vim.visualModeKeyBindings": [
+    {
+      "before": ["i", "i"],
+      "after": ["<Esc>"]
+    }
+    ],
+    "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "t", "n"],
+      "commands": [":tabnext"]
+    },
+    {
+      "before": ["<leader>", "t", "p"],
+      "commands": [":tabprev"]
+    },
+    {
+      "before": ["<leader>", "t", "f"],
+      "commands": [":tabfirst"]
+    },
+    {
+      "before": ["<leader>", "t", "l"],
+      "commands": [":tablast"]
+    },
+    {
+      "before": ["<C-[>"],
+      "after": ["<C-t>"]
+    },
+    ],
+    "vim.ignorecase": false,
+    "vim.leader": " ",
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.surround": true,
+    // "vim.statusBarColorControl": true,
+    "vim.statusBarColors": {
+    "normal": "#054653",
+    "insert": "#10561b",
+    "visual": "#5f00af",
+    "visualline": "#005f87",
+    "visualblock": "#86592d",
+    "replace": "#000000"
+    },
+    "workbench.colorCustomizations": {
+      "[Vim Dark Hard]": {
+        "editor.foreground": "#ffffff"
+      },
+      "statusBar.background": "#054653",
+      "statusBar.noFolderBackground": "#054653",
+      "statusBar.debuggingBackground": "#054653",
+      "statusBar.foreground": "#ffffff",
+      "statusBar.debuggingForeground": "#ffffff"
+    },
+    "vim.easymotionMarkerFontWeight": "normal",
+    "settingsSync.ignoredSettings": [
+    "editor.fontFamily"
+    ],
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "commentTranslate.targetLanguage": "zh-CN",
+    "http.proxyKerberosServicePrincipal": "127.0.0.1:7890",
+    "http.proxy": "http://127.0.0.1:7890",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.cursorBlinking": "smooth",
+    "workbench.list.smoothScrolling": true,
+    "editor.smoothScrolling": true,
+
+    // clangd settings
+    "clangd.arguments": [
+      "--background-index",
+      "--compile-commands-dir=${workspaceFolder}/.vscode",
+      "-j=12",
+      "--query-driver=/usr/bin/clang++",
+      "--clang-tidy",
+      "--clang-tidy-checks=performance-*,bugprone-*",
+      "--all-scopes-completion",
+      "--completion-style=detailed",
+      "--header-insertion=iwyu",
+      "--pch-storage=disk",
+      "--inlay-hints",
+      "--function-arg-placeholders=true"
+    ],
+    "clangd.fallbackFlags": [
+      "-pedantic",
+      "-Wall",
+      "-Wextra",
+      "-Wcast-align",
+      "-Wdouble-promotion",
+      "-Wformat=2",
+      "-Wimplicit-fallthrough",
+      "-Wmisleading-indentation",
+      "-Wnon-virtual-dtor",
+      "-Wnull-dereference",
+      "-Wold-style-cast",
+      "-Woverloaded-virtual",
+      "-Wpedantic",
+      "-Wshadow",
+      "-Wunused",
+      "-pthread",
+      "-fuse-ld=lld",
+      "-fsanitize=address",
+      "-fsanitize=undefined",
+      "-stdlib=libc++"
+    ],
+    "clangd.checkUpdates": true, // 自动检测 clangd 更新
+    "clangd.onConfigChanged": "restart", // 配置变更后重启 clangd
+    
+    "files.watcherExclude": {
+      "**/build/**": true,
+    },
+
+    "cmake.pinnedCommands": [
+      "workbench.action.tasks.configureTaskRunner",
+      "workbench.action.tasks.runTask"
+    ],
+    "cmake.options.statusBarVisibility": "visible",
+    "explorer.confirmDragAndDrop": false,
+    "cmake.showOptionsMovedNotification": false,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.fontFamily": "Roboto mono, Monaco, 'Courier New', monospace",
+    "terminal.integrated.inheritEnv": false,
+    "git.openRepositoryInParentFolders": "always",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "python.defaultInterpreterPath": "/Users/machine/miniconda3",
+    "python.analysis.typeCheckingMode": "basic",
+    "github.copilot.enable": {
+      "*": false,
+      "plaintext": false,
+      "markdown": false,
+      "scminput": false,
+      "python": true,
+      "cpp": false
+    },
+    "vim.smartRelativeLine": true,
+    "chat.viewSessions.orientation": "stacked",
+    "editor.minimap.enabled": false,
+    "http.systemCertificatesNode": true,
+    "geminicodeassist.project": "rising-fountain-6xfg6",
+    "geminicodeassist.inlineSuggestions.enableAuto": false,
+    "claudeCode.preferredLocation": "panel",
+    "claudeCode.disableLoginPrompt": true,
+    "claudeCode.environmentVariables": [
+      {
+        "name": "ANTHROPIC_AUTH_TOKEN",
+        "value": "cr_81bb7fe5a1ce40fa1e9dbc051a11170fdb0b6dceaedd348017adf9a2853e2d3d"
+      },
+      {
+      "name": "ANTHROPIC_BASE_URL",
+      "value": "https://cursor.scihub.edu.kg/api"
+      }
+    ],
+    "clangd.path": "/Users/machine/Library/Application Support/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/22.1.0/clangd_22.1.0/bin/clangd",
+    "claudeCode.selectedModel": "claude-sonnet-4-6",
+    "diffEditor.codeLens": true,
+    "leetcode.endpoint": "leetcode-cn",
+    "leetcode.hint.configWebviewMarkdown": false,
+    "leetcode.defaultLanguage": "cpp",
+}
+
